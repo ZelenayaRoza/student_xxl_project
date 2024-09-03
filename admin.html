@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с формой</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #575757;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <nav>
+      <a href="main.html">Главная</a>
+      <a href="registration.html">Войти или зарегестрироваться</a>
+      <a href="admin.html">Админ-панель</a>
+  </nav>
+
+    <div class="container">
+        <h2>Админ-панель</h2>
+        <form>
+            <label for="name">Логин:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Пароль:</label>
+            <input type="text" id="password" name="name" required>
+
+            <button type="submit">Вход</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
